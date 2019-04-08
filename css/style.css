@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body{
+    padding: 0;
+    margin: 0;
+    height:100vh;
+    background: linear-gradient(rgba(10,10,10,.6),rgba(0,0,0,.9)),
+     repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
+	url('../img/bcg.jpg');
+	background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+}
+.website{
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+.col-3{
+    padding: 0;
+}
+
+/* navigation section */
+.navigation{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 7%;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    cursor: pointer;
+}
+.sections{
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+    text-shadow: none;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
+    text-shadow: none; 
+}
+
+
+/* about section */
+.headlines{
+    border-right: 2px solid #fff;
+    padding: 1rem;
+    color: #00fff9;
+    
+}
+.about h2{
+    margin-top: 6rem;
+}
+.skills{
+    margin: 2rem 0;
+}
+.about p{
+    font-weight: bold;
+}
+.about i{
+    font-size: 2rem;
+    margin-right: 2rem; 
+    margin-bottom: 1rem;
+}
+
+/* projects section */
+
+.single-item{
+    height: 13rem;
+    width: 15rem;
+    transition: all 1s linear;
+    background: rgba(0,0,0,.5);
+    border-radius: 10%;
+    color: azure;
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.img-container{
+    overflow: hidden;
+    border-radius: 10% 10% 0 0;
+}
+.project-img{
+    transition: all .5s ease-in-out;
+}
+.img-container:hover .project-img{
+    transform: scale(1.1);
+}
+.single-item i{
+    font-size: 2rem;
+    display: none;
+}
+.single-item:hover i{
+    display: block;
+}
+.single-item:hover h5{
+    display: none;
+}
+
+
+/* contact section */
+
+.contact i{
+    font-size: 3rem;
+}
+/* footer */
+footer{
+    height: 50px;
+    margin-top: -80px;
+}
+.footer, a{
+    background: #00fffb25;
+    color: rgb(224, 213, 213);
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+a{
+    background: none;
+}
+.footer a:hover{
+    color:#00fff9;
+}
+
+.hide{
+    display: none;
+}
